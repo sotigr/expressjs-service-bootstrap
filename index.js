@@ -9,7 +9,7 @@ const defaultConfig = {
 module.exports = (app, config) => {
     config = config || defaultConfig;
 
-    app.get(statusUrl, (req, res) => {
+    app.get(config.statusUrl, (req, res) => {
         res.end("ok")
     })
 
