@@ -1,10 +1,13 @@
 {
-    "name": "expressjs-service-bootstrap",
-    "version": "1.0.0",
-    "main": "index.js", 
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "description": ""
-  }
-  
+  "name": "expressjs-service-bootstrap",
+  "version": "1.0.0",
+  "repository": "sotigr/expressjs-service-bootstrap",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
