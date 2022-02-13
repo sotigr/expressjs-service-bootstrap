@@ -1,4 +1,5 @@
 const allowedHostsMiddleware = require("./middleware/allowed-hosts")
+const bodyParser = require('body-parser')
 
 const defaultConfig = {
     allowedHosts: [],
@@ -12,6 +13,8 @@ module.exports = (app, config) => {
     app.get(config.statusUrl || defaultConfig.statusUrl, (req, res) => {
         res.end("ok")
     })
+
+    app.use(bodyParser.json())
 
     app.use(allowedHostsMiddleware(config.allowedHosts))
 }
