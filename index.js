@@ -1,7 +1,6 @@
 const allowedHostsMiddleware = require("./middleware/allowed-hosts")
 const rabbitmqMiddleware = require("./middleware/rabbitmq")
-const bodyParser = require('body-parser')
-const rabbitmq = require("./middleware/rabbitmq")
+const bodyParser = require('body-parser') 
 
 const defaultConfig = {
     allowedHosts: [],
