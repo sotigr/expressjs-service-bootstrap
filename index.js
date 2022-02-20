@@ -9,7 +9,7 @@ const defaultConfig = {
 }
 
 
-module.exports = (app, config) => {
+module.exports = async (app, config) => {
     if (!config) config = {};
     config = {
         ...defaultConfig,
