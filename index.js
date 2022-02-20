@@ -31,6 +31,6 @@ module.exports = async (app, config) => {
     }
 
     return {
-        rabbitmq: rabbitmqMw.rabbitmq
+        rabbitmq: config.rabbitmq? rabbitmqMw.rabbitmq: null
     }
 }
